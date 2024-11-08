@@ -73,17 +73,17 @@ function App() {
       <div className='container categories'>
         {categories}
       </div>
-      <div className='container tiles'>
+      {tiles.filter(x => x!=null).length != 0 && <div className='container tiles'>
         {tiles}
-      </div>
-      <div className='container'>
-        <button className='padded-text' onClick={() => shuffle()}>
+      </div>}
+      <div className='container buttons'>
+        <button className='block control' onClick={() => shuffle()}>
           Shuffle
         </button>
-        <button className='padded-text' onClick={() => deselectAll()}>
+        <button className='block control' onClick={() => deselectAll()}>
           Deselect all
         </button>
-        <button className='padded-text' onClick={() => submit()}>
+        <button className='block control' onClick={() => submit()}>
           Make Guess
         </button>
       </div>

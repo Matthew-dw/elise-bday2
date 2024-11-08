@@ -21,7 +21,7 @@ export enum Category {
   I = "I",
   LOVE = "LOVE",
   YOU = "YOU",
-  SOMUCH = "SO MUCH",
+  LOADS = "LOADS",
 }
 
 export function getCategory(tile: Tile): Category {
@@ -45,6 +45,6 @@ export function getCategory(tile: Tile): Category {
     case Tile.LOADS:
     case Tile.BUNCHES:
     case Tile.OODLES:
-      return Category.SOMUCH;
+      return Category.LOADS;
   }
 }
